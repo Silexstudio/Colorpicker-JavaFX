@@ -1,0 +1,191 @@
+/* Menu */
+
+*{
+    -fx-font-family: "BigNoodleTitling";
+}
+
+#menu #bg{
+    -fx-background-size: auto 100%;
+    -fx-background-position: -100px 0px;
+    -fx-background-image: url(bg.gif);
+}
+
+#menu #title{
+    -fx-font-family: "Orange Juice";
+    -fx-font-size: 90px;
+    -fx-fill: black;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,1), 20, 0, 0, 0 );
+}
+
+#menu #title:hover{
+    -fx-fill: linear-gradient(to right, rgb(200,0,0) 0%, rgb(200,0,0) 22%, rgb(0,200,0) 23%, rgb(0,200,0) 30%, rgb(0,0,200) 31%, rgb(0,0,200) 33%, rgb(200,200,0) 34%, rgb(200,200,0) 41%, rgb(220,0,220) 42%, rgb(220,0,220) 47%, black 48%);
+}
+
+.button{
+    -fx-font-size: 30px;
+    -fx-font-family: "BigNoodleTitling";
+    -fx-background-color: rgba(255,255,255,.7);
+    -fx-cursor:hand;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,1), 20, 0, 0, 0 );
+}
+
+.button:hover{
+    -fx-background-color: rgba(255,255,255,1);
+    -fx-rotate: 10deg;
+    -fx-scale-x: 1.6;
+    -fx-scale-y: 1.6;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5), 30, 0, 0, 0 );
+}
+
+.button:pressed{
+    -fx-rotate: -10deg;
+    -fx-scale-x: 1.4;
+    -fx-scale-y: 1.4;
+}
+
+#start:hover{
+    -fx-background-color: rgba(0,200,0,1);
+    -fx-effect: dropshadow( gaussian , rgba(0,255,0,0.5), 30, 0, 0, 0 );
+    -fx-text-fill: white;
+    -fx-rotate: -5deg;
+}
+
+#start:pressed{
+    -fx-rotate: 5deg;
+}
+
+#exit:hover{
+    -fx-background-color: rgba(255,0,0,1);
+    -fx-effect: dropshadow( gaussian , rgba(255,0,0,0.5), 30, 0, 0, 0 );
+    -fx-text-fill: white;
+    -fx-rotate: 180;
+}
+
+/* Scoreboard */
+
+#scoreboard #bg{
+    -fx-background-image: url(scoreboard.png);
+}
+
+#back, #submitBtn{
+    -fx-background-color: rgba(255,255,255,1);
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.5), 30, 0, 0, 0 );
+}
+
+#back:hover, #submitBtn:hover{
+    -fx-background-color: rgba(0,0,0,1);
+    -fx-text-fill: white;
+}
+
+#scroll{
+    -fx-font-size: 40px;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+#scroll .vbox{
+    -fx-background-color: transparent;
+}
+
+#scroll .hbox{
+    -fx-background-color: transparent;
+}
+
+
+/* Difficulty */
+
+#difficulty #bg{
+    -fx-background-image: url(hatter.png);
+}
+
+#easy:hover{
+    -fx-background-color: rgba(0,200,0,1);
+    -fx-text-fill: white;
+}
+
+#medium:hover{
+    -fx-background-color: rgba(0,0,200,1);
+    -fx-text-fill: white;
+}
+
+#hard:hover{
+    -fx-background-color: rgba(200,0,0,1);
+    -fx-text-fill: white;
+}
+
+/* Game */
+
+#btn1, #btn2, #btn3, #btn4{
+    -fx-effect: none;
+}
+
+#btn1:hover, #btn2:hover, #btn3:hover, #btn4:hover{
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+    -fx-rotate: 0;
+}
+
+#btn1{
+    -fx-background-color:red;
+    -fx-border-radius: 130 0 0 0;
+    -fx-background-radius: 130 0 0 0;
+}
+
+#btn1:hover{
+    -fx-background-color: rgb(255,50,50);
+}
+
+#btn2{
+    -fx-background-color:green;
+    -fx-border-radius: 0 130 0 0;
+    -fx-background-radius: 0 130 0 0;
+}
+
+#btn2:hover{
+    -fx-background-color: rgb(50,200,50);
+}
+
+#btn3{
+    -fx-background-color:blue;
+    -fx-border-radius: 0 0 0 130;
+    -fx-background-radius: 0 0 0 130;
+}
+
+#btn3:hover{
+    -fx-background-color: rgb(50,50,255);
+}
+
+#btn4{
+    -fx-background-color:yellow;
+    -fx-border-radius: 0 0 130 0;
+    -fx-background-radius: 0 0 130 0;
+}
+
+#btn4:hover{
+    -fx-background-color: rgb(255,255,125);
+}
+
+#byColor{
+    opacity: 0;
+}
+
+#byColor{
+    -fx-background-image: url(palette.png);
+}
+
+#byText{
+    -fx-background-image: url(text.png);
+}
+
+#heart1, #heart2, #heart3{
+    -fx-background-size: 46px 46px;
+    -fx-background-image: url(heart.png);   
+}
+
+#submitPane{
+    -fx-opacity: 0;
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="game" prefHeight="800" prefWidth="600" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="window.GameController">
+    <children>
+        <Label id="bg" layoutY="6.0" minHeight="800.0" minWidth="600.0" />
+      <ProgressBar fx:id="timerBar" layoutX="24.0" layoutY="23.0" prefHeight="32.0" prefWidth="553.0" progress="0.0" />
+      <Text fx:id="scoreText" layoutX="513.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="67.13671875">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Text>
+      <Text fx:id="color" layoutX="15.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="571.216796875">
+         <font>
+            <Font size="82.0" />
+         </font>
+      </Text>
+      <Button id="btn1" fx:id="btn1" layoutX="104.0" layoutY="425.0" mnemonicParsing="false" onAction="#btn1Click" prefHeight="90.0" prefWidth="197.0" />
+      <Button id="btn2" fx:id="btn2" layoutX="301.0" layoutY="425.0" mnemonicParsing="false" onAction="#btn2Click" prefHeight="90.0" prefWidth="197.0" />
+      <Button id="btn3" fx:id="btn3" layoutX="104.0" layoutY="515.0" mnemonicParsing="false" onAction="#btn3Click" prefHeight="90.0" prefWidth="197.0" />
+      <Button id="btn4" fx:id="btn4" layoutX="301.0" layoutY="515.0" mnemonicParsing="false" onAction="#btn4Click" prefHeight="90.0" prefWidth="197.0" />
+      <AnchorPane id="byColor" fx:id="byColor" layoutX="25.0" layoutY="247.0" prefHeight="64.0" prefWidth="64.0" />
+      <AnchorPane id="byText" fx:id="byText" layoutX="515.0" layoutY="247.0" prefHeight="64.0" prefWidth="64.0" />
+      <AnchorPane id="heart1" fx:id="heart1" layoutX="25.0" layoutY="61.0" prefHeight="46.0" prefWidth="46.0" />
+      <AnchorPane id="heart2" fx:id="heart2" layoutX="89.0" layoutY="61.0" prefHeight="46.0" prefWidth="46.0" />
+      <AnchorPane id="heart3" fx:id="heart3" layoutX="155.0" layoutY="61.0" prefHeight="46.0" prefWidth="46.0" />
+      <AnchorPane id="submitPane" fx:id="submitPane" layoutX="103.0" layoutY="635.0" prefHeight="127.0" prefWidth="396.0">
+         <children>
+            <Button id="submitBtn" layoutX="294.0" layoutY="51.0" mnemonicParsing="false" onAction="#submit" text="Submit" />
+            <TextField id="submitText" fx:id="submitText" layoutX="23.0" layoutY="55.0" prefHeight="46.0" prefWidth="220.0" promptText="Enter your name">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="difficulty" prefHeight="800" prefWidth="600" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="window.DifficultyController">
+    <children>
+        <Label id="bg" minHeight="800.0" minWidth="600.0" />
+        <Button id="back" layoutX="227.0" layoutY="697.0" mnemonicParsing="false" onAction="#clickBack" prefHeight="45.0" prefWidth="146.0" text="Back" />
+        <Button id="easy" layoutX="218.0" layoutY="174.0" mnemonicParsing="false" onAction="#clickEasy" prefHeight="37.0" prefWidth="164.0" text="Easy" />
+        <Button id="medium" layoutX="218.0" layoutY="309.0" mnemonicParsing="false" onAction="#clickMedium" prefHeight="37.0" prefWidth="164.0" text="Medium" />
+        <Button id="hard" layoutX="218.0" layoutY="458.0" mnemonicParsing="false" onAction="#clickHard" prefHeight="37.0" prefWidth="164.0" text="Hard" />
+    </children>
+</AnchorPane>

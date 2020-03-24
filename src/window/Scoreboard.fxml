@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="scoreboard" prefHeight="800" prefWidth="600" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="window.ScoreboardController">
+    <children>
+        <Label id="bg" minHeight="800.0" minWidth="600.0" />
+        <Button id="back" layoutX="227.0" layoutY="697.0" mnemonicParsing="false" onAction="#clickBack" prefHeight="45.0" prefWidth="146.0" text="Back" />
+        <ScrollPane id="scroll" fx:id="scroll" layoutX="28.0" layoutY="27.0" maxHeight="650.0" prefWidth="544.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+        </content>
+      </ScrollPane>
+    </children>
+</AnchorPane>
